@@ -4,3 +4,10 @@ jdk:
 
 node_js:
   - "0.10"
+
+install:
+  - cd javascript
+  - npm install grunt-cli bower
+  - npm install
+  - node_modules/bower/bin/bower install
+
