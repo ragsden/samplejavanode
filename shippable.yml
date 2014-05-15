@@ -1,0 +1,29 @@
+language: java
+
+jdk:
+   - openjdk7
+
+node_js:
+  - "0.10"
+
+install:
+#  - ant 3dparty
+  - cd javascript
+  - npm install grunt-cli bower
+  - npm install
+  - node_modules/bower/bin/bower install
+
+before_script:
+ - mkdir -p shippable/codecoverage shippable/testresults
+
+script: 
+   - cd j2ee/build
+   - ant coverage
+  - node_modules/grunt-cli/bin/grunt test
+  - node_modules/grunt-cli/bin/grunt build
+  - mv test-results.xml ../shippable/testresults
+  - mv coverage/cobertura/*/coverage.xml ../shippable/codecoverage
+  - node_modules/grunt-cli/bin/grunt test:browsers
+
+notifications:
+  email: false

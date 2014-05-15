@@ -1,0 +1,4 @@
+<testsuite name="Mocha Tests" tests="2" failures="0" errors="0" skipped="0" timestamp="Fri, 09 May 2014 01:30:46 GMT" time="0.004">
+<testcase classname="nextPrime" name="nextPrime should return the next prime number" time="0"/>
+<testcase classname="nextPrime" name="zero and one are not prime numbers" time="0"/>
+</testsuite>

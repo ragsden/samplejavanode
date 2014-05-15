@@ -1,0 +1,31 @@
+{
+  "name": "episode1",
+  "version": "0.0.0",
+  "description": "This is the first episode in njmyway node js learning series",
+  "main": "app.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ragsden/episode1"
+  },
+  "engines": {
+    "node": "0.10.15"
+  },
+  "devDependencies": {
+    "istanbul": "0.1.x",
+    "xunit-file": "0.0.5"
+  },
+  "dependencies": {
+    "mocha": "1.18.2"
+  },
+  "keywords": [
+    "Learn",
+    "Node",
+    "js"
+  ],
+  "author": "Raghu",
+  "license": "BSD",
+  "gitHead": "80670579f8efd17fea17e6934146e31ce799841a"
+}
