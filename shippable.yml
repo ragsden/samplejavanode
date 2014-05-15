@@ -1,7 +1,4 @@
-language: java
-jdk:
-   - openjdk7
-
+language: node_js
 node_js:
   - "0.10"
 
