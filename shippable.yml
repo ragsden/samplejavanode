@@ -6,7 +6,7 @@ node_js:
   - "0.10"
 
 install:
-  - /home/minion/.nvm/nvm.sh && nvm install 0.10
+  - nvm use 0.10.0
   - npm install grunt-cli bower
   - npm install
   - node_modules/bower/bin/bower install
