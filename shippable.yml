@@ -1,9 +1,12 @@
-language: node_js
+language: java
+jdk:
+   - openjdk7
+
 node_js:
   - "0.10"
 
 install:
-  - . /home/minion/.nvm/nvm.sh use 0.10.0
+  - . /home/minion/.nvm/nvm.sh use 0.10.24
   - npm install grunt-cli bower
   - npm install
   - node_modules/bower/bin/bower install
