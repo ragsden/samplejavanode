@@ -6,9 +6,9 @@ node_js:
   - "0.10"
 
 install:
-  - . /home/minion/.nvm/nvm.sh use 0.10.24 && npm install grunt-cli bower
-  - . /home/minion/.nvm/nvm.sh use 0.10.24 && npm install
-  - . /home/minion/.nvm/nvm.sh use 0.10.24 && node_modules/bower/bin/bower install
+  - . /home/minion/.nvm/nvm.sh use 0.10.24  && npm config set ca '' && npm install grunt-cli bower
+  - . /home/minion/.nvm/nvm.sh use 0.10.24  && npm config set ca '' && npm install
+  - . /home/minion/.nvm/nvm.sh use 0.10.24 &&  npm config set ca '' && node_modules/bower/bin/bower install
 
 before_script:
  - mkdir -p shippable/codecoverage shippable/testresults
